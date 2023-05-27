@@ -324,7 +324,7 @@ form btn2{
     color: #ff004f;
 }
 
-/*------------- css for small screen---------*/
+/*------------- css for smaller screen---------*/
 nav .fas{
     display: none;
 }
