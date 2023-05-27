@@ -7,6 +7,7 @@
     <title>Persnol Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b4450354af.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 <body>
     <div id="header">
@@ -24,8 +25,9 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-            <p>Backend Developer &<br> Nodejs Developer</p>
-            <h1>Hi, I'm <span>Waseem</span> <br>From Noida</h1>
+          <!----  <p>Backend Developer &<br> Nodejs Developer</p>-->
+            <span id="element"></span>
+            <h1>Hi, I'm <span id="element1"></span> <br>From Noida</h1>
             </div>
         </div>
 
@@ -209,5 +211,16 @@
             sidemenu.style.right = '-200px';
         }
     </script>
+     <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>Backend Developer</i>', ' Nodejs Developer'],
+          typeSpeed: 60,
+        });
+
+        var typed = new Typed('#element1', {
+          strings: ['<i>Waseem</i>'],
+          typeSpeed: 90,
+        });
+      </script>
 </body>
 </html>
